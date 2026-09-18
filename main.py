@@ -2,7 +2,6 @@ from fastapi import FastAPI, Depends, HTTPException, status
 from sqlmodel import Session, select
 from typing import List
 
-# Importaciones directas desde la raíz (sin app.)
 from database import create_db_and_tables, get_session
 from models import Producto, Pedido
 
